@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+.card {
+  @apply bg-card text-card-foreground rounded-xl border border-border/40 shadow;
+}
